@@ -52,20 +52,20 @@ body {
   .skills {
     margin-top: 30px;
   }
-  .skills-item {
+  .skillsItem {
     font-size: 3em;
   }
   .divider.top {
     flex-direction: column;
   }
-  .desktop-header {
+  .desktopHeader {
     display: none;
   }
-  #mobile-header {
+  #mobileHeader {
     display: flex;
     justify-content: center;
   }
-  .mobile-wrapper {
+  .mobileWrapper {
     display: inline-grid;
     justify-content: center;
   }
@@ -76,24 +76,24 @@ body {
   .navbar {
     flex-direction: column;
   }
-  .end-nav {
+  .endNav {
     z-index: 1;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
-  .nav-item {
+  .navItem {
     padding: 5px 10px;
     display: inline-block;
   }
-  .projects-wrapper {
+  .projectsWrapper {
     flex-direction: column;
   }
-  .project-section {
+  .projectsSection {
     flex-direction: column;
     padding: 0px;
   }
-  .project-picture {
+  .projectPicture {
     max-height: 475px;
     max-width: 300px;
     border-radius: 5px;
@@ -106,27 +106,28 @@ body {
     display: none;
   }
 }
+
 @media only screen and (min-width: 1080px) {
   #tsparticles-2 {
     width: 100%;
     height: 30%;
     position: absolute;
   }
-  .skills-item {
+  .skillsItem {
     font-size: 5em;
   }
-  #mobile-header {
+  #mobileHeader {
     display: none;
   }
-  .nav-name,
-  .nav-description {
+  .navName,
+  navDescription {
     margin-left: 100px;
   }
-  .mobile-wrapper {
+  .mobileWrapper {
     display: flex;
     justify-content: space-around;
   }
-  .project-picture {
+  .projectPicture {
     max-height: 450px;
     max-width: 500px;
     border-radius: 5px;
@@ -135,20 +136,20 @@ body {
     transition: 0.25s ease;
     border-radius: 5px;
   }
-  .project-section {
+  .projectsSection {
     padding: 30px;
     display: flex;
   }
-  .nav-item:last-child {
+  .navItem:last-child {
     margin-right: 100px;
   }
 }
 
-.nav-item:hover {
+.navItem:hover {
   color: rgb(253, 212, 90);
 }
 
-.end-nav {
+.endNav {
   z-index: 1;
   display: flex;
 }
@@ -175,7 +176,7 @@ footer {
   font-weight: 500;
 }
 
-.projects-wrapper {
+.projectsWrapper {
   display: flex;
   justify-content: center;
   padding: 30px;
@@ -185,7 +186,7 @@ footer {
   color: $secondary-color;
 }
 
-.project-header {
+.projectHeader {
   padding: 0 0 10px 0;
   font-weight: 500;
   transition: all 0.4s ease;
@@ -230,7 +231,7 @@ footer {
   align-items: center;
 }
 
-.tag-list {
+.tagList {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -247,7 +248,7 @@ footer {
   margin-right: 10px;
 }
 
-.code-buttons {
+.codeButtons {
   display: flex;
   justify-content: center;
   margin: 20px 0;
@@ -268,7 +269,7 @@ footer {
   background-color: rgb(68, 68, 68);
 }
 
-.list-item {
+.listItem {
   margin-bottom: 5px;
   margin-left: 30px;
   font-size: 18px;
@@ -281,7 +282,7 @@ footer {
   font-size: 40px;
 }
 
-.border-divider {
+.borderDivider {
   border-top: 2px solid #a09c87;
   padding-top: 30px;
 }
@@ -343,7 +344,7 @@ footer {
   background-color: #240000f2;
 }
 
-.success-message {
+.successMessage {
   transition: all 0.4s ease;
   background-color: black;
   margin-top: 10px;
@@ -376,7 +377,7 @@ footer {
   background-color: rgba(0, 122, 126, 0.479);
 }
 
-.contact-info {
+.contactInfo {
   font-size: 25px;
   margin-left: 10px;
 }
@@ -397,7 +398,7 @@ footer {
   margin: auto;
 }
 
-.footer-item {
+.footerItem {
   z-index: 1;
   padding: 20px;
   font-weight: 500;
@@ -428,17 +429,17 @@ footer {
   color: green;
 }
 
-.picture-size {
+.pictureSize {
   transform: scale(1.25);
   left: 50px;
 }
 
-.image-container {
+.imageContainer {
   position: relative;
   text-align: center;
 }
 
-.center-pic {
+.centerPic {
   opacity: 0;
   cursor: pointer;
   background-color: $background-color;
@@ -452,7 +453,7 @@ footer {
   transition: 0.25s ease-in-out;
 }
 
-.center-pic1 {
+.centerPic1 {
   opacity: 0;
   cursor: pointer;
   background-color: $background-color;
@@ -466,8 +467,8 @@ footer {
   transition: 0.25s ease-in-out;
 }
 
-.mobile-wrapper .project-picture:hover,
-#chess .project-picture:hover {
+.mobileWrapper .projectPicture:hover,
+#chess .projectPicture:hover {
   animation: shake 0.75s ease;
 }
 
@@ -494,13 +495,13 @@ footer {
   }
 }
 
-.skills-row {
+.skillsRow {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.skills-row:not(:last-of-type) {
+.skillsRow:not(:last-of-type) {
   margin-right: 25px;
 }
 
@@ -510,7 +511,7 @@ footer {
   perspective: 900px;
 }
 
-.skills-item {
+.skillsItem {
   border: double 3px transparent;
   border-image-slice: 1;
   border-width: 3px;
@@ -530,3 +531,4 @@ footer {
 .contact-me {
   z-index: 1;
 }
+

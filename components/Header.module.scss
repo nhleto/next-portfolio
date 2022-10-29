@@ -1,10 +1,12 @@
+@import "../styles/variables.module.scss";
+
 .navbar {
   color: black;
   display: flex;
   justify-content: space-between;
 }
 
-.nav-item {
+.navItem {
   padding: 20px;
   font-weight: 500;
   transition: all 0.4s ease;
@@ -14,16 +16,25 @@
   height: fit-content;
 }
 
-.nav-name {
+.navName {
   padding: 20px 20px 0 20px;
   font-weight: 500;
   transition: all 0.4s ease;
   font-size: 40px;
 }
 
-.nav-description {
+.navDescription {
   padding: 0 20px 20px 20px;
   font-weight: 500;
   transition: all 0.4s ease;
   font-size: 20px;
+}
+
+.navItem:hover{
+  color: $nav-hover-color;
+}
+
+.endNav{
+  z-index: 1;
+  display: flex;
 }
