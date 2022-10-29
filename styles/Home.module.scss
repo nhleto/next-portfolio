@@ -1,1 +1,12 @@
 @import "./variables.module.scss";
+
+.divider {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid #a09c87;
+  width: 80%;
+  margin: 0 auto;
+}
+
